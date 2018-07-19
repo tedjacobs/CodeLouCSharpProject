@@ -1,0 +1,50 @@
+﻿@model DisneyFilmList.Models.Movie
+
+    @{
+        ViewBag.Title = "Details";
+    }
+
+<h2>Details</h2>
+
+<div style="font-size:x-large;">
+    <h4>Movie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt style="color:orangered;">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt style="color:orangered;">
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt style="color:orangered;">
+            @Html.DisplayNameFor(model => model.Producer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producer.Name)
+        </dd>
+
+        <dt style="color:orangered;">
+            @Html.DisplayNameFor(model => model.Star)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Star.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
