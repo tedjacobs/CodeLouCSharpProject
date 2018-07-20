@@ -15,6 +15,7 @@ namespace DisneyFilmList.Models
 
 
         [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:ddd, MMM d, yyyy}", ApplyFormatInEditMode = true)]
         public DateTime ReleaseDate { get; set; }
         
         public Producer Producer { get; set; }
