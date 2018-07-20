@@ -200,7 +200,7 @@ th {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -3421,7 +3421,7 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus {
   color: #23527c;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
 }
 .btn-link[disabled]:hover,
@@ -4280,7 +4280,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-  text-decoration: none;
+  text-decoration: initial;
 }
 .navbar-brand > img {
   display: block;
@@ -4470,6 +4470,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 14px;
 }
 .navbar-text {
+  color: black;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -4497,7 +4498,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #000;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -4593,7 +4594,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: #000000;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4608,7 +4609,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #fff !important;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -4960,7 +4961,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #f2be00;
 }
 .jumbotron h1,
 .jumbotron .h1 {
