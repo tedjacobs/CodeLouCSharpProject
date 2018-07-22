@@ -7,7 +7,7 @@ using DisneyFilmList.Models;
 
 namespace DisneyFilmList.DAL
 {
-    public class FilmListInitializer : System.Data.Entity. DropCreateDatabaseIfModelChanges<FilmListContext>
+    public class FilmListInitializer : System.Data.Entity. DropCreateDatabaseAlways<FilmListContext>
     {
         protected override void Seed(FilmListContext context)
         {
@@ -50,22 +50,7 @@ namespace DisneyFilmList.DAL
 
             context.Stars.Add(movies[0].Star);
             context.Producers.Add(movies[0].Producer);
-
             context.SaveChanges();
-            
-            //var producers = new List<Producer>
-            //{
-            //    //new Producer{Name="Walt Disney",MovieID=1,StarID=1937},
-            //    //new Producer{Name="Walt Disney",MovieID=2,StarID=1940},
-            //    //new Producer{Name="Walt Disney",MovieID=3,StarID=1941},
-            //    //new Producer{Name="Walt Disney",MovieID=4,StarID=1942},
-            //    //new Producer{Name="Walt Disney",MovieID=5,StarID=1946},
-            //    //new Producer{Name="Walt Disney",MovieID=6,StarID=1949},
-            //    //new Producer{Name="Walt Disney",MovieID=7,StarID=1950},
-            //    //new Producer{Name="Walt Disney",MovieID=8,StarID=1953},
-            //};
-            //producers.ForEach(m => context.Producers.Add(m));
-            //context.SaveChanges();
         }
     }
 }

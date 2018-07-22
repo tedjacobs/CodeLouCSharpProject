@@ -16,6 +16,7 @@ namespace DisneyFilmList.Controllers
     {
         private FilmListContext db = new FilmListContext();
 
+
         // GET: Movie
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
@@ -35,7 +36,7 @@ namespace DisneyFilmList.Controllers
             ViewBag.CurrentFilter = searchString;
 
             var movies = from m in db.Movies
-                            select m;
+                         select m;
             if (!String.IsNullOrEmpty(searchString))
             {
                 movies = movies.Where(m => m.Title.Contains(searchString)

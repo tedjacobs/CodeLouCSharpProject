@@ -11,6 +11,8 @@ namespace DisneyFilmList.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
+
+        [Required]
         public string Title { get; set; }
 
 

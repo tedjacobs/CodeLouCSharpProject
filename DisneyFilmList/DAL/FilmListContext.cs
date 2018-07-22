@@ -10,7 +10,6 @@ namespace DisneyFilmList.DAL
 {
     public class FilmListContext : DbContext
     {
-
         public FilmListContext() : base("FilmListContext")
         {
         }
