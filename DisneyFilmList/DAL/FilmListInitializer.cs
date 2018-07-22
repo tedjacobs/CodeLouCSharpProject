@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data.Entity;
 using DisneyFilmList.Models;
 
 namespace DisneyFilmList.DAL
@@ -42,7 +39,7 @@ namespace DisneyFilmList.DAL
             new Movie {Title="The Black Cauldron",ReleaseDate=DateTime.Parse("1985-07-24"), Star = new Star{ Name="Grant Bardsley" }, Producer = new Producer{Name="Joe Hale"}},
             new Movie {Title="The Great Mouse Detective",ReleaseDate=DateTime.Parse("1986-07-02"), Star = new Star{ Name="Vincent Price" }, Producer = new Producer{Name="Burny Mattinson"}},
             new Movie {Title="Who Framed Roger Rabbit",ReleaseDate=DateTime.Parse("1988-06-22"), Star = new Star{ Name="Charles Fleischer" }, Producer = new Producer{Name="Frank Marshall"}},
-            new Movie {Title="Oliver & Company",ReleaseDate=DateTime.Parse("1988-11-18"), Star = new Star{ Name="Joey Lawrence" }, Producer = new Producer{Name="Walt Disney Feature Animation"}}
+            new Movie {Title="Oliver & Company",ReleaseDate=DateTime.Parse("1988-11-18"), Star = new Star{ Name="Joey Lawrence" }, Producer = new Producer{Name="Kathleen Gavin"}}
             };
             //System.DateTime.Today.ToShortDateString()
 
