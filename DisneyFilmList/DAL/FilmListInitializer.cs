@@ -41,7 +41,6 @@ namespace DisneyFilmList.DAL
             new Movie {Title="Who Framed Roger Rabbit",ReleaseDate=DateTime.Parse("1988-06-22"), Star = new Star{ Name="Charles Fleischer" }, Producer = new Producer{Name="Frank Marshall"}},
             new Movie {Title="Oliver & Company",ReleaseDate=DateTime.Parse("1988-11-18"), Star = new Star{ Name="Joey Lawrence" }, Producer = new Producer{Name="Kathleen Gavin"}}
             };
-            //System.DateTime.Today.ToShortDateString()
 
             movies.ForEach(m => context.Movies.Add(m));
 

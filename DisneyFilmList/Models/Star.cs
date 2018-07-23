@@ -7,7 +7,5 @@ namespace DisneyFilmList.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int StarID { get; set; }
         public string Name { get; set; }
-
-
     }
 }

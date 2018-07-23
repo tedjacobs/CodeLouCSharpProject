@@ -15,7 +15,7 @@ namespace DisneyFilmList.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "What is the Disney Film List?";
 
             return View();
         }

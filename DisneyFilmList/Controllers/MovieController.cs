@@ -37,8 +37,7 @@ namespace DisneyFilmList.Controllers
                          select m;
             if (!String.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(m => m.Title.Contains(searchString)
-                    /*|| m.ReleaseDate.Contains(searchString)*/);
+                movies = movies.Where(m => m.Title.Contains(searchString));
             }
             switch (sortOrder)
             {
@@ -108,20 +107,6 @@ namespace DisneyFilmList.Controllers
             }
             return View(movie);
         }
-
-        //// POST: Movie/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit([Bind(Include = "ID,Title,ReleaseDate,Producer")] Movie movie)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Entry(movie).State = EntityState.Modified;
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(movie);
-        //}
 
         // GET: Movie/Edit/5
         public ActionResult Edit(int? id)
