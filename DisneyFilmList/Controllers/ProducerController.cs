@@ -17,7 +17,7 @@ namespace DisneyFilmList.Controllers
         // GET: Producer
         public ActionResult Index()
         {
-            return View(db.Producers.ToList());
+            return View(db.Producers.ToList().GroupBy(d => d.Name).Select(d => d.FirstOrDefault()));
         }
 
         // GET: Producer/Details/5

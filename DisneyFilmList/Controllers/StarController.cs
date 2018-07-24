@@ -18,7 +18,7 @@ namespace DisneyFilmList.Controllers
         // GET: Star
         public ActionResult Index()
         {
-            return View(db.Stars.ToList());
+            return View(db.Stars.ToList().GroupBy(d => d.Name).Select(d => d.FirstOrDefault()));
         }
 
         // GET: Star/Details/5
