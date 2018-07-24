@@ -1,9 +1,12 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using DisneyFilmList.DAL;
 using DisneyFilmList.Models;
+using PagedList;
 
 namespace DisneyFilmList.Controllers
 {
