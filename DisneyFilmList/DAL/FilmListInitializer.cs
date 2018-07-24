@@ -10,7 +10,7 @@ namespace DisneyFilmList.DAL
         {
             var movies = new List<Movie>()
             {
-            new Movie {Title="White and the Seven Dwarfs",ReleaseDate=DateTime.Parse("1937-12-21"), Star = new Star{ Name="Adriana Caselotti" }, Producer = new Producer{Name="Walt Disney"}},
+            new Movie {Title="Snow White and the Seven Dwarfs",ReleaseDate=DateTime.Parse("1937-12-21"), Star = new Star{ Name="Adriana Caselotti" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Pinocchio",ReleaseDate=DateTime.Parse("1940-02-07"), Star = new Star{ Name="Dick Jones" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Fantasia",ReleaseDate=DateTime.Parse("1940-11-13"), Star = new Star{ Name="Leopold Stokowski" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Dumbo",ReleaseDate=DateTime.Parse("1941-10-23"), Star = new Star{ Name="Edward Brophy" }, Producer = new Producer{Name="Walt Disney"}},
