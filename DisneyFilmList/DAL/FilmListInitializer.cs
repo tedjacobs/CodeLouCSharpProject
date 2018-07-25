@@ -6,6 +6,7 @@ namespace DisneyFilmList.DAL
 {
     public class FilmListInitializer : System.Data.Entity. DropCreateDatabaseAlways<FilmListContext>
     {
+        //Where I chose to seed all the data
         protected override void Seed(FilmListContext context)
         {
             var movies = new List<Movie>()
