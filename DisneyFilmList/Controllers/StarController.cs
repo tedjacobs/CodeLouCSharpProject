@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using DisneyFilmList.DAL;
 using DisneyFilmList.Models;
@@ -18,10 +15,11 @@ namespace DisneyFilmList.Controllers
         // GET: Star
         public ActionResult Index()
         {
+            //Used GroupBy() and Select() to eliminate duplicates.
             return View(db.Stars.ToList().GroupBy(d => d.Name).Select(d => d.FirstOrDefault()));
         }
 
-        // GET: Star/Details/5
+        // GET: Star/Details/
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -57,7 +55,7 @@ namespace DisneyFilmList.Controllers
             return View(star);
         }
 
-        // GET: Star/Edit/5
+        // GET: Star/Edit/
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -72,7 +70,7 @@ namespace DisneyFilmList.Controllers
             return View(star);
         }
 
-        // POST: Star/Edit/5
+        // POST: Star/Edit/
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "StarID,Name")] Star star)
@@ -86,7 +84,7 @@ namespace DisneyFilmList.Controllers
             return View(star);
         }
 
-        // GET: Star/Delete/5
+        // GET: Star/Delete/
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -101,7 +99,7 @@ namespace DisneyFilmList.Controllers
             return View(star);
         }
 
-        // POST: Star/Delete/5
+        // POST: Star/Delete/
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

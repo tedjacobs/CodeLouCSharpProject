@@ -1,12 +1,10 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using DisneyFilmList.DAL;
 using DisneyFilmList.Models;
-using PagedList;
 
 namespace DisneyFilmList.Controllers
 {
@@ -17,10 +15,11 @@ namespace DisneyFilmList.Controllers
         // GET: Producer
         public ActionResult Index()
         {
+            //Used GroupBy() and Select() to eliminate duplicates.
             return View(db.Producers.ToList().GroupBy(d => d.Name).Select(d => d.FirstOrDefault()));
         }
 
-        // GET: Producer/Details/5
+        // GET: Producer/Details/
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -56,7 +55,7 @@ namespace DisneyFilmList.Controllers
             return View(producer);
         }
 
-        // GET: Producer/Edit/5
+        // GET: Producer/Edit/
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -71,7 +70,7 @@ namespace DisneyFilmList.Controllers
             return View(producer);
         }
 
-        // POST: Producer/Edit/5
+        // POST: Producer/Edit/
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ProducerID,Name")] Producer producer)
@@ -85,7 +84,7 @@ namespace DisneyFilmList.Controllers
             return View(producer);
         }
 
-        // GET: Producer/Delete/5
+        // GET: Producer/Delete/
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -100,7 +99,7 @@ namespace DisneyFilmList.Controllers
             return View(producer);
         }
 
-        // POST: Producer/Delete/5
+        // POST: Producer/Delete/
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

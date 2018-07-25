@@ -16,6 +16,7 @@ namespace DisneyFilmList.Controllers
 
 
         // GET: Movie
+        //Added code below to search and sort the film list.
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
             ViewBag.CurrentSort = sortOrder;
@@ -32,7 +33,7 @@ namespace DisneyFilmList.Controllers
             }
 
             ViewBag.CurrentFilter = searchString;
-
+            
             var movies = from m in db.Movies
                          select m;
             if (!String.IsNullOrEmpty(searchString))
@@ -61,7 +62,7 @@ namespace DisneyFilmList.Controllers
         }
 
 
-        // GET: Movie/Details/5
+        // GET: Movie/Details/
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -108,7 +109,7 @@ namespace DisneyFilmList.Controllers
             return View(movie);
         }
 
-        // GET: Movie/Edit/5
+        // GET: Movie/Edit/
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -123,7 +124,7 @@ namespace DisneyFilmList.Controllers
             return View(movie);
         }
 
-        // GET: Movie/Edit/5
+        // GET: Movie/Edit/
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
         public ActionResult EditPost(int? id)
@@ -151,7 +152,7 @@ namespace DisneyFilmList.Controllers
             return View(movieToUpdate);
         }
 
-        // GET: Movie/Delete/5
+        // GET: Movie/Delete/
         public ActionResult Delete(int? id, bool? saveChangesError=false)
         {
             if (id == null)
@@ -170,7 +171,7 @@ namespace DisneyFilmList.Controllers
             return View(movie);
         }
 
-        // POST: Movie/Delete/5
+        // POST: Movie/Delete/
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)

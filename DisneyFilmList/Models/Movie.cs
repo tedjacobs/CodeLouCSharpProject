@@ -12,7 +12,7 @@ namespace DisneyFilmList.Models
         [Required]
         public string Title { get; set; }
 
-
+        //Added to have a specific looking date (without a time).
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:ddd, MMM d, yyyy}", ApplyFormatInEditMode = true)]
         public DateTime ReleaseDate { get; set; }
