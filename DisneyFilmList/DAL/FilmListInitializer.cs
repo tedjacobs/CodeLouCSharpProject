@@ -16,6 +16,7 @@ namespace DisneyFilmList.DAL
             new Movie {Title="Fantasia",ReleaseDate=DateTime.Parse("1940-11-13"), Star = new Star{ Name="Leopold Stokowski" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Dumbo",ReleaseDate=DateTime.Parse("1941-10-23"), Star = new Star{ Name="Edward Brophy" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Bambi",ReleaseDate=DateTime.Parse("1942-08-13"), Star = new Star{ Name="Donnie Dunagan" }, Producer = new Producer{Name="Walt Disney"}},
+            new Movie {Title="Saludos Amigos",ReleaseDate=DateTime.Parse("1943-02-06"), Star = new Star{ Name="Walt Disney" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="The Three Caballeros",ReleaseDate=DateTime.Parse("1945-02-03"), Star = new Star{ Name="Clarence Nash" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Make Mine Music",ReleaseDate=DateTime.Parse("1946-04-20"), Star = new Star{ Name="Nelson Eddy" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Fun and Fancy Free",ReleaseDate=DateTime.Parse("1947-09-27"), Star = new Star{ Name="Cliff Edwards" }, Producer = new Producer{Name="Walt Disney"}},
@@ -54,6 +55,7 @@ namespace DisneyFilmList.DAL
             new Movie {Title="The Hunchback of Notre Dame",ReleaseDate=DateTime.Parse("1996-06-21"), Star = new Star{ Name="Tom Hulce" }, Producer = new Producer{Name="Don Hahn"}},
             new Movie {Title="Hercules",ReleaseDate=DateTime.Parse("1997-06-27"), Star = new Star{ Name="Tate Donovan" }, Producer = new Producer{Name="Alice Dewey"}},
             new Movie {Title="Mulan",ReleaseDate=DateTime.Parse("1998-06-19"), Star = new Star{ Name="Ming-Na Wen" }, Producer = new Producer{Name="Pam Coats"}},
+            new Movie {Title="Pocahontas II",ReleaseDate=DateTime.Parse("1998-08-04"), Star = new Star{ Name="Billy Zane" }, Producer = new Producer{Name="Leslie Hough"}},
             new Movie {Title="A Bug's Life",ReleaseDate=DateTime.Parse("1998-11-25"), Star = new Star{ Name="Dave Foley" }, Producer = new Producer{Name="Darla K. Anderson"}},
             new Movie {Title="Tarzan",ReleaseDate=DateTime.Parse("1999-06-16"), Star = new Star{ Name="Tony Goldwyn" }, Producer = new Producer{Name="Bonnie Arnold"}},
             new Movie {Title="Toy Story 2",ReleaseDate=DateTime.Parse("1999-11-24"), Star = new Star{ Name="Tom Hanks" }, Producer = new Producer{Name="Helene Plotkin"}},
@@ -62,6 +64,7 @@ namespace DisneyFilmList.DAL
             new Movie {Title="Dinosaur",ReleaseDate=DateTime.Parse("2000-05-19"), Star = new Star{ Name="D. B. Sweeney" }, Producer = new Producer{Name="Pam Marsden"}},
             new Movie {Title="The Emperor's New Groove",ReleaseDate=DateTime.Parse("2000-12-15"), Star = new Star{ Name="David Spade" }, Producer = new Producer{Name="Randy Fullmer"}},
             new Movie {Title="Recess: School's Out",ReleaseDate=DateTime.Parse("2001-02-16"), Star = new Star{ Name="Andrew Lawrence" }, Producer = new Producer{Name="Joe Ansolabehere"}},
+            new Movie {Title="Lady and the Tramp II",ReleaseDate=DateTime.Parse("2001-02-27"), Star = new Star{ Name="Alyssa Milano" }, Producer = new Producer{Name="Jeannine Roussel"}},
             new Movie {Title="Atlantis: The Lost Empire",ReleaseDate=DateTime.Parse("2001-06-15"), Star = new Star{ Name="Michael J. Fox" }, Producer = new Producer{Name="Don Hahn"}},
             new Movie {Title="Monsters, Inc.",ReleaseDate=DateTime.Parse("2001-11-02"), Star = new Star{ Name="John Goodman" }, Producer = new Producer{Name="Darla K. Anderson"}},
             new Movie {Title="Return to Never Land",ReleaseDate=DateTime.Parse("2002-02-15"), Star = new Star{ Name="Harriet Owen" }, Producer = new Producer{Name="Christopher Chase"}},
@@ -78,8 +81,10 @@ namespace DisneyFilmList.DAL
             new Movie {Title="Valiant",ReleaseDate=DateTime.Parse("2005-08-19"), Star = new Star{ Name="Ewan McGregor" }, Producer = new Producer{Name="John H. Williams"}},
             new Movie {Title="Chicken Little",ReleaseDate=DateTime.Parse("2005-11-04"), Star = new Star{ Name="Zach Braff" }, Producer = new Producer{Name="Randy Fullmer"}},
             new Movie {Title="The Wild",ReleaseDate=DateTime.Parse("2006-04-14"), Star = new Star{ Name="Kiefer Sutherland" }, Producer = new Producer{Name="Clint Goldman"}},
+            new Movie {Title="Bambi II",ReleaseDate=DateTime.Parse("2006-02-07"), Star = new Star{ Name="Alexander Gould" }, Producer = new Producer{Name="Jim Ballantine"}},
             new Movie {Title="Cars",ReleaseDate=DateTime.Parse("2006-06-09"), Star = new Star{ Name="Owen Wilson" }, Producer = new Producer{Name="Darla K. Anderson"}},
             new Movie {Title="Meet the Robinsons",ReleaseDate=DateTime.Parse("2007-03-30"), Star = new Star{ Name="Jordan Fry" }, Producer = new Producer{Name="Dorothy McKim"}},
+            new Movie {Title="The Adventures of Oswald the Lucky Rabbit",ReleaseDate=DateTime.Parse("2007-12-01"), Star = new Star{ Name="Leonard Maltin" }, Producer = new Producer{Name="Walt Disney"}},
             new Movie {Title="Ratatouille",ReleaseDate=DateTime.Parse("2007-06-29"), Star = new Star{ Name="Patton Oswalt" }, Producer = new Producer{Name="Brad Lewis"}},
             new Movie {Title="WALL-E",ReleaseDate=DateTime.Parse("2008-06-27"), Star = new Star{ Name="Ben Burtt" }, Producer = new Producer{Name="Jim Morris"}},
             new Movie {Title="Roadside Romeo",ReleaseDate=DateTime.Parse("2008-10-24"), Star = new Star{ Name="Saif Ali Khan" }, Producer = new Producer{Name="Aditya Chopra"}},
@@ -109,9 +114,9 @@ namespace DisneyFilmList.DAL
             new Movie {Title="Cars 3",ReleaseDate=DateTime.Parse("2017-06-16"), Star = new Star{ Name="Owen Wilson" }, Producer = new Producer{Name="Kevin Reher"}},
             new Movie {Title="Coco",ReleaseDate=DateTime.Parse("2017-11-22"), Star = new Star{ Name="Anthony Gonzalez" }, Producer = new Producer{Name="Darla K. Anderson"}},
             new Movie {Title="Incredibles 2",ReleaseDate=DateTime.Parse("2018-06-15"), Star = new Star{ Name="Holly Hunter" }, Producer = new Producer{Name="John Walker"}},
-            new Movie {Title="Christopher Robin",ReleaseDate=DateTime.Parse("2018-07-23"), Star = new Star{ Name="Ewan McGregor" }, Producer = new Producer{Name="Brigham Taylor"}},
-            new Movie {Title="Ralph Breaks the Internet",ReleaseDate=DateTime.Parse("2018-07-23"), Star = new Star{ Name="Sarah Silverman" }, Producer = new Producer{Name="Clark Spencer"}},
-            new Movie {Title="Toy Story 4",ReleaseDate=DateTime.Parse("2019-07-23"), Star = new Star{ Name="Tom Hanks" }, Producer = new Producer{Name="Jonas Rivera"}}
+            new Movie {Title="Christopher Robin",ReleaseDate=DateTime.Parse("2018-08-03"), Star = new Star{ Name="Ewan McGregor" }, Producer = new Producer{Name="Brigham Taylor"}},
+            new Movie {Title="Ralph Breaks the Internet",ReleaseDate=DateTime.Parse("2018-11-21"), Star = new Star{ Name="Sarah Silverman" }, Producer = new Producer{Name="Clark Spencer"}},
+            new Movie {Title="Toy Story 4",ReleaseDate=DateTime.Parse("2019-06-21"), Star = new Star{ Name="Tom Hanks" }, Producer = new Producer{Name="Jonas Rivera"}}
             };
             movies.ForEach(m => context.Movies.Add(m));
 
